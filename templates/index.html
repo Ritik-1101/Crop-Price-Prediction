@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farm Price Predictor</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="background-image"></div> 
+
+  <header class="header">
+    <div class="container">
+      <h1>Farm Price Predictor</h1>
+      <p>Get insights into your agricultural products</p>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="banner">
+      <div class="banner-content">
+        <h2>Predict farm product prices</h2>
+        <p>Our AI model helps you make informed decisions about your crops.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="prediction-form">
+        <div class="input-group">
+          <label for="productname">Product Name:</label>
+          <input type="text" id="productname" required>
+        </div>
+
+        <div class="input-group">
+          <label for="year">Year:</label>
+          <input type="number" id="year" min="2000" max="2030" required>
+        </div>
+
+        <div class="input-group">
+          <label for="month">Month:</label>
+          <select id="month" required>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+
+        <button type="submit">Predict Price</button>
+      </form>
+
+      <div id="result" class="hidden">
+        <h2>Predicted Price:</h2>
+        <p id="predicted-price"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Farm Price Predictor</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
